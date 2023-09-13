@@ -1,0 +1,301 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+body
+{
+    color:#ededed;
+    
+    
+}
+.myimage{
+    padding: 20%;
+}
+.header
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10px;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    
+}
+.logo
+{
+    position: relative;
+    font-size: 25px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+}
+.navbar a {
+    display:inline-block;
+    font-size: 25px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left:35px;
+    transition:.3s;
+    opacity: 0;
+    animation: slideTop .5s ease forwards;
+    animation-delay: calc(.2s * var(--i));
+    
+}
+.navbar a:hover{
+    color: #0ef;
+}
+.home
+{
+    position: relative;
+    width: 100%;
+    justify-content: space-between;
+    height: 100vh;
+    background: url(ayush1.png);
+    background-color: black;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    padding: 70px 10% 0;
+
+}
+.home-sci{
+    margin-bottom: 10%;
+}
+.home-content{
+    max-width: 600px;
+    display: inline;
+}
+.bgimage {
+    display: inline;
+    resize: both;
+    height: auto;
+}
+.home-content h3 {
+ font-size: 32px;
+ font-weight: 700;
+}
+.home-content h1 {
+    font-size: 50px;
+    font-weight: 700;
+    margin: -3px 0;
+    opacity: 0;
+    animation: slideRight 1s ease forwards;
+    animation-delay: 1s;
+
+}
+
+.home-content h3 {
+
+    opacity: 0;
+    animation: slideLeft 1s ease forwards;
+    animation-delay: 1s;
+
+}
+.home-content p {
+    font-size: 20px;
+    opacity: 0;
+    animation: slideLeft 1s ease forwards;
+    animation-delay: 1s;
+
+}
+.home-sci a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1%;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid #0ef;
+    border-radius: 50%;
+    font-size: 20px;
+    color: #0ef;
+    text-decoration: none;
+    opacity: 0;
+    animation: slideLeft 1s ease forwards;
+    animation-delay: calc(.2s * var(--i));
+
+    
+}
+.home-sci a:hover {
+    background: #0ef;
+    color: #081b29;
+    box-shadow: 0 0 20px #0ef;
+}
+.btn-box {
+    display: inline-block;
+    padding: 12px 28px;
+    background: #0ef;
+    border-radius: 40px;
+    font-size: 16px;
+    color: #081b29;
+    letter-spacing: 1px;
+    text-decoration: none;
+    font-weight: 600;
+}
+.btn-box:hover {
+    box-shadow: 0 0 5px cyan,
+    0 0 25px cyan, 0 0 50px cyan,
+    0 0 100px cyan, 0 0 200px cyan
+
+}
+.home-content h3 span {
+    color: #0ef;
+}
+@keyframes slideRight {
+    0%{
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+@keyframes slideLeft {
+    0%{
+        transform: translateX(100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+@keyframes slideTop {
+    0%{
+        transform: translateY(100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+@keyframes slideBottom {
+    0%{
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+.about
+{
+    position: relative;
+    width: 100%;
+    justify-content: space-between;
+    height: 100vh;
+    background-size: cover;
+    background: url(ayush2.png);
+    background-position: center;
+    display: flex;
+    align-items: center;
+    padding: 70px 10% 0;
+   
+
+}
+.about-text{
+    max-width: 600px;
+    margin-left: 60%;
+    opacity: 0;
+    animation: slideLeft 1s ease forwards;
+    animation-delay: 1s;
+
+}
+.skill{
+    background-color: black;
+    
+    
+    height: 100vh;
+    align-items: center;
+   
+}
+.about-text h4 span {
+    color: #0ef;
+}
+.myskill {
+    color: #0ef;
+}
+
+.skill-text{
+
+    text-align: center;
+    justify-content: center;
+    position: relative;
+    padding: 5%;
+
+}
+.skill-text h1 {
+    display: inline-block;
+    color: ;
+}
+.Card {
+    padding: 5%;
+    border: solid;
+    margin: 10%;
+    border-color: #0ef;
+    
+}
+.container h4{
+color: #0ef;
+}
+
+.projects {
+    position: relative;
+    width: 100%;
+    justify-content: space-between;
+    height: 100vh;
+    background-size: cover;
+    background: url(ayush2.png);
+    background-position: center;
+    display: flex;
+    align-items: center;
+    padding: 70px 10% 0
+   
+
+}
+.project-text {
+    max-width: 600px;
+    margin-left: 60%;
+    opacity: 0;
+    animation: slideLeft 1s ease forwards;
+    animation-delay: 1s;
+    font-size: 2rem;
+    color: #0ef;
+
+  
+}
+
+.contact {
+    background-color: black;
+    height: 100vh;
+    align-items: center;
+   
+}
+.contact-text{
+
+    text-align: center;
+    justify-content: center;
+    position: relative;
+    padding: 5%;
+
+}
+.contact-text h2 {
+    color: #0ef;
+}
+
+.contact-info {
+    margin-top: 20%;
+}
